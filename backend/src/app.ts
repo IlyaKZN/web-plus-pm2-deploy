@@ -6,12 +6,11 @@ import cookieParser from 'cookie-parser';
 import { errors } from 'celebrate';
 import cors from 'cors';
 import errorHandler from './middlewares/error-handler';
-import { DB_ADDRESS } from './config';
 import routes from './routes';
 
 const { PORT = 3000 } = process.env;
 const app = express();
-mongoose.connect(DB_ADDRESS);
+mongoose.connect(process.env.DB_ADDRESS!);
 
 // Только для локальных тестов. Не используйте это в продакшене
 app.use(cors());
