@@ -13,6 +13,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "deploy": "npm run build && scp -Сr ./build/* ilya1998@158.160.43.192:/home/ilya1998/web-plus-pm2-deploy/frontend",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
