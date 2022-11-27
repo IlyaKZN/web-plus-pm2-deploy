@@ -13,7 +13,7 @@ module.exports = {
   // Настройка деплоя
   deploy: {
     production: {
-      key: '~/.ssh/id_ed25519.pub',
+      key: '~/.ssh/id_ed25519',
       user: DEPLOY_USER,
       host: DEPLOY_HOST,
       ref: DEPLOY_REF,
