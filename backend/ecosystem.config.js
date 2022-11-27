@@ -13,6 +13,7 @@ module.exports = {
   // Настройка деплоя
   deploy: {
     production: {
+      key: '~/.ssh/node_ec2.pem',
       user: DEPLOY_USER,
       host: DEPLOY_HOST,
       ref: DEPLOY_REF,
